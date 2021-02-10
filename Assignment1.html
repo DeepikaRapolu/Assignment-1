@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Assignment 1</title>
+</head>
+<body>
+<script>
+//the + operator concats the given numbers considering them as strings
+//Output : 122
+console.log(1 + "2"+ "2");
+
+//the first + is considered as an operator
+//the second + operator before 2 converts string "2" as number 2
+//so 1+2 becomes 3 and the string "2" has only one + operator so it is concatenated to 3
+//Output : 32
+console.log(1 + +"2" + "2");
+
+//Output : 02
+console.log(1 +-"1" + "2");
+
+//the first + operator converts string "1" to number type 1
+//but the + operator concats the strings 
+//Output : 112
+console.log(+"1" + "1" + "2");
+
+//the - operator performs operations on only numbers
+//if the operation is performed on strings it returns NaN
+//the + operator concats NaN and string "2"
+//Output : NaN2
+console.log("A" - "B" + "2");
+
+//the - operator performs operations on only numbers
+//if the operation is performed on strings it returns NaN
+//NaN and number 2 cannot be added so
+//Output : NaN
+console.log("A" - "B" + 2);
+</script>
+</body>
+</html>
